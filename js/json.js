@@ -16,7 +16,7 @@ async function populate() {
     const response = await fetch(request);
     
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
-    const iScream = await response;
+    const iScream = await response.json();
     console.log(iScream);
 
     // STEP 8: Output the iScream JSON object to the console 
